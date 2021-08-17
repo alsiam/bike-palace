@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honda Cbr</title>
+    <title>Welcome to Bike Palace - Al Siam</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/harely-davidson-logo.ico" type="image/x-icon">
     <!-- Google Font Family -->
@@ -19,6 +19,7 @@
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
         a {
             color: #ddd;
@@ -81,52 +82,47 @@
 
     <!-- header started
 ------------------------------- -->
-    <header class="text-white" style="background-color: #264653;">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top d-flex justify-content-between align-items-center py-3"
-                style="background-color: #264653;">
-                <div style="width:40%">
-                    <img src="images/harely-davidson-logo.png" class="img-fluid" style="width: 200px;">
-                </div>
-                <div class="container-fluid justify-content-end" style="width: 60%;">
-                    <button class="navbar-toggler float-right" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#features">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
+    <header class="text-white" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="logo-text">Bike Palace<sup
+                            class="logo-dot">.</sup></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex me-auto"> </div>
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
 
-                        </ul>
-                        <div class="d-flex justify-content-center">
-                            <button class="btn btn-success">Sign Up</button>
-                        </div>
-                    </div>
+                    </ul>
+
                 </div>
-            </nav>
-        </div>
-        <!-- Slide header started -->
-        <div class="container py-5 d-lg-flex .d-md-block">
-            <div class="d-lg-flex align-items-center .d-md-block">
-                <div style="width: 90%;">
+            </div>
+            </div>
+        </nav>
+        <div class="py-5 d-lg-flex .d-md-block slider-img">
+            <div class="container d-lg-flex align-items-center .d-md-block">
+                <div class="slide-wrap">
                     <p style="color: #E0E0E0;">Computer-controlled digital transistorized with electronic advance</p>
-                    <h1 class="fw-bold text-white" style="font-size: 50px;">Honda CBR 300R</h1>
-                    <p style="color: #E0E0E0;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    <h1 class="fw-bold text-white slide-title">Honda CBR 300R</h1>
+                    <p class="slide-details">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
@@ -178,9 +174,6 @@
                     </button>
 
                 </div>
-            </div>
-            <div style="width: 100%;" class="py-3">
-                <img src="images/harley-main.png" class="img-fluid">
             </div>
         </div>
     </header>
@@ -975,12 +968,13 @@
         </div>
     </section>
 
+    <a href="#header" class="back-top"><i class="fas fa-chevron-up"></i></a>
     <!-- Footer Section
     ---------------------------- -->
     <footer class="py-5" style="background-color: #0B0D17;">
         <div class="container ">
-            <div class="row justify-content-between align-items-center text-white">
-                <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="d-lg-flex justify-content-between align-items-center text-white">
+                <div class="">
                     <div class="d-flex">
                         <a class="me-3" href="#">Downloads</a>
                         <a class="me-3" href="#">License</a>
@@ -995,10 +989,10 @@
                         <span class="tt-uppercase">&copy2020 all rights reserved by al siam</span>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="">
                     <h4>Get the App</h4>
-                    <img src="images/app-store.png" class="img-fluid d-block rounded my-3" style="width: 30%;" alt="">
-                    <img src="images/play-store.png" class="img-fluid d-block rounded my-3" style="width: 30%;" alt="">
+                    <img src="images/app-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
+                    <img src="images/play-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
                 </div>
             </div>
         </div>
